@@ -18,7 +18,7 @@ Go to the file `question2.py`:
 
 With peers sending such datastructure and our _backend_ server making such operations, we retrieve exactly **all** the connection durations on the network at the moment of the snapshot and we are able to plot the _exact distribution_ of the connection durations.
 `question2.py` main has several simulations with increasing numbers of peers and peer pool size. Run the simulations with your implementation. What do you see? Can you explain the limitations of the implementations of question 2 taking into account that a _real_ peer network can have _millions_ of peers? (answer below in this file)
->> With the increasing of the numbers of perrs and peer pool size, the backen processing time also increases significantly (eg. 2.17s for 10 000 number of peers and pool size of 100, which is too long. the limitation of the implementation is that the backend database contain a very large list that need to be counted by `the compute_histogram_bins` method. This is not a optimal way.
+>> With the increasing of the numbers of peers and peer pool size, the backend processing time also increases significantly (eg. 2.17s for 10 000 number of peers and pool size of 100, which is too long. the limitation of the implementation is that the backend database contain a very large list that need to be counted by `the compute_histogram_bins` method. This is not a optimal way.
 
 #### Question 4
 
