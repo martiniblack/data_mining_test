@@ -24,6 +24,6 @@ With peers sending such datastructure and our _backend_ server making such opera
 
 Go to the file `question4.py`: 
 Propose new implementations of `send_data_to_backend` and `process_backend_data` that can deal with millions of peers _and_ still provide a good representation of the _distribution_ of the connection duration. You are free to add any written comments, add pictures etc. to enhance your answer.
->> Following the analysis above, we can perform each time the `the compute_histogram_bins` method with a small list before and send the result to the backend database instead of the raw data. And for the process step, we can just take a sum of the result for each list, which is very fast to run. Throughout the simulation, it takes 0.00979s to run the 10 000 number of peers and pool size of 100. even with 1 000 000 peers and 100 pool size, it takes s, this is a more optimal way.
+>> Following the analysis above, we can perform each time the `the compute_histogram_bins` method with a small list before and send the result to the backend database instead of the raw data. And for the process step, we can just take a sum of the result for each list, which is very fast to run. Throughout the simulation, it takes 0.00979s to run the 10 000 number of peers and pool size of 100. even with 100 000 peers and 100 pool size, it takes 0.1366s, this is a more optimal way.
 
 
