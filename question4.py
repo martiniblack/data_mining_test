@@ -33,7 +33,8 @@ class SimulationQ4(Simulation):
         """
         bin_counts_array = np.array(self.backend_database)
         bin_counts_remove_duplicate = list(np.sum(bin_counts_array, axis=0)//2)
-        print(bin_counts_remove_duplicate)
+        #print(bin_counts_remove_duplicate)
+        return bin_counts_remove_duplicate
 
 
 if __name__ == "__main__":
@@ -58,6 +59,6 @@ if __name__ == "__main__":
     s.run()
     s.report_result()
 
-    s = SimulationQ4(number_of_peers=100000, max_peer_pool_size=100)
+    s = SimulationQ4(number_of_peers=10000, max_peer_pool_size=100)
     s.run()
     s.report_result()

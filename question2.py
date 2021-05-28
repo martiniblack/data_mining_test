@@ -31,7 +31,7 @@ class SimulationQ2(Simulation):
         backend_database_flatten = list(chain.from_iterable(self.backend_database))
         bin_ranges, bin_counts = compute_histogram_bins(backend_database_flatten, BINS)
         bin_counts_remove_duplicate = list(map(lambda x: x//2, bin_counts))
-        print(list(zip(bin_ranges, bin_counts_remove_duplicate)))
+        #print(list(zip(bin_ranges, bin_counts_remove_duplicate)))
 
         return bin_counts_remove_duplicate
 
